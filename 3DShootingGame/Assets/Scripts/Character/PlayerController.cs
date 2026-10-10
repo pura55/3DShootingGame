@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -80,6 +79,12 @@ public class PlayerController : MonoBehaviour
         float speed = new Vector3(moveDirection.x, Vector3.zero.y, moveDirection.z).magnitude; // ジャンプはしないのでy軸は固定
         myAnimator.SetFloat("Speed", speed);
 
-        characterController.Move(moveDirection * Time.deltaTime);
+        // ワールド方向をローカルの方向に変換
+        Vector3 finalDirection = transform.TransformDirection(moveDirection.x, 0, moveDirection.z);
+
+        // y軸は固定
+        finalDirection.y = moveDirection.y;
+
+        characterController.Move(finalDirection * Time.deltaTime);
     }
 }
