@@ -8,6 +8,18 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class PlayerController : MonoBehaviour
 {
+    public enum SoldierWeapons
+    {
+        None,
+        AssaultRifle,
+        Bazooka,
+        Rifle,
+        Gun,
+        DualGun
+    }
+
+    public SoldierWeapons equippedWeapon;
+
     #region Config
     [SerializeField] private float walkVelocity = 1.0f; // 歩きの速度
     [SerializeField] private float runVelocity = 2.0f; // 走りの速度
@@ -28,6 +40,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        myAnimator.SetTrigger(equippedWeapon.ToString());
+
         // プレイヤー操作
         ControlPlayer();
 
@@ -35,13 +49,13 @@ public class PlayerController : MonoBehaviour
         ApplyChanges();
     }
 
-    /// @brief 移動処理を行います
+    /// @brief 移動の入力を行います
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
     }
 
-    /// @brief 走りの判定を行います
+    /// @brief 走りの入力を行います
     public void OnRun(InputAction.CallbackContext context)
     {
         isRun = context.ReadValueAsButton();
