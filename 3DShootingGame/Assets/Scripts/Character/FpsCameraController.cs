@@ -11,7 +11,7 @@ public class FpsCameraController : MonoBehaviour
     #region Config
     [SerializeField] protected float cameraSensitivity = 0.2f; // カメラ感度
     [SerializeField] protected float viewingAngle = 60f; // 縦方向の視野角
-    [SerializeField] protected Transform characterHead; // 操作するキャラの頭
+    [SerializeField] protected Transform characterCamera; // 操作するキャラの頭
     #endregion
 
     #region State
@@ -65,7 +65,7 @@ public class FpsCameraController : MonoBehaviour
         // 上下の視野角を固定
         headDirection.x = Mathf.Clamp(headDirection.x, -viewingAngle, viewingAngle);
 
-        characterHead.localRotation = Quaternion.Euler(headDirection);
+        characterCamera.localRotation = Quaternion.Euler(headDirection);
 
         // 体の視点方向
         Vector3 BodyDirection = new Vector3(0, lookDirection.y, 0);

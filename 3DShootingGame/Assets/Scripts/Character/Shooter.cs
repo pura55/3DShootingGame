@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 /// <summary>
 /// シューター
 /// 
-/// 発射処理全般を担当します
+/// キャラクターの発射の入力処理を担当します
 /// </summary>
 public class Shooter : MonoBehaviour
 {
@@ -17,6 +17,12 @@ public class Shooter : MonoBehaviour
     private bool isShooting = false; // 発射フラグ
     #endregion
 
+    // 発射フラグを取得します
+    public bool IsShooting
+    {
+        get {  return isShooting; }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,15 +32,12 @@ public class Shooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!isShooting)
+        if(!isShooting && havingWeapon == null)
         {
             return;
         }
 
-        if (Mouse.current.leftButton.isPressed)
-        {
-            Debug.Log("発射中");
-        }
+        //Debug.Log("発射中");
     }
 
     /// @brief 発射の入力を行います

@@ -1455,6 +1455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9192980580793842092}
+  - component: {fileID: -8399963256626075906}
   m_Layer: 0
   m_Name: AR_W
   m_TagString: Untagged
@@ -1490,6 +1491,21 @@ Transform:
   - {fileID: 1693647485348008275}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8399963256626075906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8480964329072437233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c522c7c30534e24b965c25319042944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShootBullet
+  bullet: {fileID: 3718716693786367985, guid: 21708e6f6d5dcaf48921122943ebe1cd, type: 3}
+  shootRate: 0.2
+  shooter: {fileID: 0}
 --- !u!1 &8765240141221428516
 GameObject:
   m_ObjectHideFlags: 0
