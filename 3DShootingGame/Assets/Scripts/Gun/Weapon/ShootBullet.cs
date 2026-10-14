@@ -10,9 +10,11 @@ public class ShootBullet : MonoBehaviour
 {
     #region Config
     [SerializeField] private GameObject bullet; // 弾丸のオブジェクト
+    [SerializeField] private Transform generatePoint; // 弾丸の生成ポイント 
     [SerializeField] private float shootRate = 0.2f; // 発射レート
-    [SerializeField] Shooter shooter; // シューター
-    [SerializeField] Vector3 shootingPosition = new Vector3(1f,1f, 1f); // 発射する座標
+    [SerializeField] private Shooter shooter; // シューター
+    [SerializeField] private CastFrontRay caseFrontRay; // レイ発射
+    //[SerializeField] Vector3 shootingPosition = new Vector3(1f,1f, 1f); // 発射する座標
     [SerializeField] private float shootPositionSize = 0.01f; // 発射場所のサイズ
     #endregion
 
@@ -37,14 +39,12 @@ public class ShootBullet : MonoBehaviour
             return;
         }
 
+        
         if(!isShot)
         {
             GenerateBullet();
             Debug.Log("発射を規制します");
             isShot = true;
-        }
-        else
-        {
             StartCoroutine(WaitNextShooot());
         }
 
@@ -60,17 +60,22 @@ public class ShootBullet : MonoBehaviour
         isShot = false;
     }
 
-    /// @ 弾丸を生成します
+    /// @biref 弾丸を生成します
     private void GenerateBullet()
     {
-        GameObject generatedBullet = Instantiate(bullet, transform.position + shootingPosition, transform.rotation);
+        GameObject generatedBullet = Instantiate(bullet, generatePoint.position /*+ shootingPosition*/, transform.rotation);
 
-        //generatedBullet.Target() = bullet;
+        BulletMovement movement = generatedBullet.GetComponent<BulletMovement>();
+
+        Vector3 direction = caseFrontRay.CastRay() - generatePoint.position;
+
+        // 差分を正規化し進行方向を渡す
+        movement.MoveDirection = direction.normalized;
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(shootingPosition, shootPositionSize);
+        Gizmos.DrawWireSphere(generatePoint.position, shootPositionSize);
     }
 }

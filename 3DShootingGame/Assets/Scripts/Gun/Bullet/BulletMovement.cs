@@ -11,38 +11,33 @@ public class BulletMovement : MonoBehaviour
 
     # region Config
     [SerializeField] private float lifeTime = 10.0f; // 弾丸の生存時間
+    [SerializeField] private float speed = 10f; // 進行速度
     # endregion
 
     #region State
-    private Transform target; // 弾丸が向かうトランスフォーム
+    private Vector3 moveDirection; // 進行方向
     #endregion
 
-    public Transform Target
+    public Vector3 MoveDirection
     {
-        set {  target = value; }
+        set {  moveDirection = value; }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        StartCoroutine(WaitLifeTime());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(target == null)
+        if(moveDirection == null)
         {
             return;
         }
 
         MoveBullet();
-    }
-
-    /// @biref 生存時間を開始します
-    public void StartLifeTime()
-    {
-        StartCoroutine(WaitLifeTime());
     }
 
     /// @brief生存時間が終了するまで待機します
@@ -56,6 +51,6 @@ public class BulletMovement : MonoBehaviour
     /// @brief 弾丸を移動させます
     private void MoveBullet()
     {
-
+        transform.position += moveDirection * speed * Time.deltaTime;
     }
 }

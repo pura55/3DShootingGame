@@ -15,10 +15,10 @@ TagManager:
   - Fps
   - Tps
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Bullet
+  - Map
   - 
   - 
   - 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 468677607227517711}
   - component: {fileID: 4294100684082949131}
   - component: {fileID: 4510291959596577770}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 9038425653224545611}
   - component: {fileID: 4907614404078500597}
   - component: {fileID: 816706229884682649}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_BarrelGuard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 5296176001071259767}
   - component: {fileID: 9024574509846353803}
   - component: {fileID: 7153694030803192918}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Bolt_Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 612848523871775746}
   - component: {fileID: 5983948217218607920}
   - component: {fileID: 258323514823756882}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Optic_Front_Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 5796175499300596044}
   - component: {fileID: 485045931175710215}
   - component: {fileID: 787044607864919294}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Ejection Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 1537784469058337065}
   - component: {fileID: 8400353256274276104}
   - component: {fileID: 4253872557901656116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_BarrelGuard_Lok_Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 3579630453656448341}
   - component: {fileID: 7355540238848858609}
   - component: {fileID: 7020287718314569025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Receiver_Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 4943000642490557432}
   - component: {fileID: 9046456574251898337}
   - component: {fileID: 8384062265454732261}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Optic_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -735,7 +735,7 @@ GameObject:
   - component: {fileID: 1076634315332245752}
   - component: {fileID: 3153585070633225178}
   - component: {fileID: 6458709101279541857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Stock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -825,7 +825,7 @@ GameObject:
   - component: {fileID: 7513399042012763336}
   - component: {fileID: 1126479910793435536}
   - component: {fileID: 9104918509415790643}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_BarrelGuard_Lok_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 1025459437806033423}
   - component: {fileID: 7494097905989906977}
   - component: {fileID: 6459796103583201037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Receiver_Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1005,7 +1005,7 @@ GameObject:
   - component: {fileID: 1549387969651739599}
   - component: {fileID: 2046760923357540404}
   - component: {fileID: 2391428679844724012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Mag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1095,7 +1095,7 @@ GameObject:
   - component: {fileID: 6163526991069244518}
   - component: {fileID: 4851487792064957093}
   - component: {fileID: 5963166523599224761}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Optic_Back_Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1185,7 +1185,7 @@ GameObject:
   - component: {fileID: 8265080761091062346}
   - component: {fileID: 3551381886837125436}
   - component: {fileID: 8921022279789284966}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1275,7 +1275,7 @@ GameObject:
   - component: {fileID: 8492381868782336474}
   - component: {fileID: 7258565404189095823}
   - component: {fileID: 2473935983446766034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Optic_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1366,7 +1366,7 @@ GameObject:
   - component: {fileID: 6435729004302957719}
   - component: {fileID: 5222728752651788050}
   - component: {fileID: 5181209683644368366}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1456,7 +1456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9192980580793842092}
   - component: {fileID: -8399963256626075906}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,6 +1489,7 @@ Transform:
   - {fileID: 1076634315332245752}
   - {fileID: 468677607227517711}
   - {fileID: 1693647485348008275}
+  - {fileID: 9032802411140627747}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-8399963256626075906
@@ -1504,8 +1505,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShootBullet
   bullet: {fileID: 3718716693786367985, guid: 21708e6f6d5dcaf48921122943ebe1cd, type: 3}
-  shootRate: 0.2
+  generatePoint: {fileID: 9032802411140627747}
+  shootRate: 0.15
   shooter: {fileID: 0}
+  caseFrontRay: {fileID: 0}
+  shootPositionSize: 0.01
 --- !u!1 &8765240141221428516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,7 +1521,7 @@ GameObject:
   - component: {fileID: 2440555743358062491}
   - component: {fileID: 4864160396236368658}
   - component: {fileID: 3602481302950042971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_BarrelGuard_Lok_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1607,7 +1611,7 @@ GameObject:
   - component: {fileID: 2106776595861826139}
   - component: {fileID: 5611155816333461103}
   - component: {fileID: 2313362306747674920}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AR_W_Grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1686,6 +1690,68 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1141258189392130663
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9192980580793842092}
+    m_Modifications:
+    - target: {fileID: 5833881851306087241, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+      propertyPath: m_Name
+      value: GeneratePoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254083996505149252, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0037
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254083996505149252, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0752
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254083996505149252, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7243
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254083996505149252, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7616083
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254083996505149252, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.41814816
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254083996505149252, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.36699802
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254083996505149252, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.33229116
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254083996505149252, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254083996505149252, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254083996505149252, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+--- !u!4 &9032802411140627747 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8254083996505149252, guid: fcc99644f9bb4014da0559056c36252b, type: 3}
+  m_PrefabInstance: {fileID: 1141258189392130663}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1997998671367871328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1737,6 +1803,14 @@ PrefabInstance:
     - target: {fileID: 1824560606910615366, guid: c9af941b327ae1842ab6fa785033661b, type: 3}
       propertyPath: m_Name
       value: Optic_I_Sand
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824560606910615366, guid: c9af941b327ae1842ab6fa785033661b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456044173074133243, guid: c9af941b327ae1842ab6fa785033661b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
