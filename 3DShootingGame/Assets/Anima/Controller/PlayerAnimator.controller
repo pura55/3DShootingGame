@@ -7,7 +7,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Full body
+  m_Name: Move
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 5201703717016341260}
@@ -66,7 +66,7 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Full body
+    m_Name: Move
     m_StateMachine: {fileID: -6744092288448232954}
     m_Mask: {fileID: 31900000, guid: 89527f5525238ee44b3182458d85143a, type: 2}
     m_Motions: []

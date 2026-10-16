@@ -2,24 +2,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// プレイヤーコントローラー
+/// プレイヤーMovement
 /// 
-/// プレイヤーを操作する処理を担当します
+/// プレイヤーを移動操作に関する処理を担当します
 /// </summary>
-public class PlayerController : MonoBehaviour
+public class PlayerMovement : MonoBehaviour ,IMovable
 {
-    public enum SoldierWeapons
-    {
-        None,
-        AssaultRifle,
-        Bazooka,
-        Rifle,
-        Gun,
-        DualGun
-    }
-
-    public SoldierWeapons equippedWeapon;
-
     #region Config
     [SerializeField] private float walkVelocity = 1.0f; // 歩きの速度
     [SerializeField] private float runVelocity = 2.0f; // 走りの速度
@@ -40,13 +28,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //myAnimator.SetTrigger(equippedWeapon.ToString());
-
         // プレイヤー操作
         ControlPlayer();
 
         // 処理反映
-        ApplyChanges();
+        ((IMovable)this).ApplyMovementChanges();
     }
 
     /// @brief 移動の入力を行います
@@ -73,7 +59,7 @@ public class PlayerController : MonoBehaviour
     }
 
     /// @brief 処理を反映します
-    private void ApplyChanges()
+    void IMovable.ApplyMovementChanges()
     {
         // 速度を反映
         float velocity;
