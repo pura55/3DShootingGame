@@ -2052,7 +2052,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7405158209352517521}
-  - component: {fileID: 5399700735557578545}
   m_Layer: 6
   m_Name: Chest
   m_TagString: Untagged
@@ -2076,19 +2075,6 @@ Transform:
   - {fileID: 2725243723102614366}
   m_Father: {fileID: 1281306486551902680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5399700735557578545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7806512004569950222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b438220458f68a4aa0ee769d1404ee3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotateChest
-  cameraTransform: {fileID: 1561037334240591928}
 --- !u!1 &7921448218412250668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2294,6 +2280,7 @@ GameObject:
   - component: {fileID: 2971801969925669772}
   - component: {fileID: 1603741896951499773}
   - component: {fileID: 2424539049241573211}
+  - component: {fileID: 7435283725089445377}
   m_Layer: 9
   m_Name: PlayableCharacter
   m_TagString: Untagged
@@ -2471,7 +2458,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb25f8fa9ce8964f987301a0351b264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  equippedWeapon: 0
   walkVelocity: 3
   runVelocity: 6
   myAnimator: {fileID: 3648606243882051285}
@@ -2504,6 +2490,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shooter
   havingWeapon: {fileID: 2722215424438395176}
+--- !u!114 &7435283725089445377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526735618018286374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ade9f2891c7c74297f25e1ae078fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  myHealth: 100
 --- !u!1 &8574036265486547770
 GameObject:
   m_ObjectHideFlags: 0
