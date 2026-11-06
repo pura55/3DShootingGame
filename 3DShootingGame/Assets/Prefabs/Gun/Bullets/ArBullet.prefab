@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletMovement
   lifeTime: 10
-  speed: 5
+  speed: 15
 --- !u!114 &4444939640254697135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22ab9118eeb97c49b9e792f786ef876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletDamage
+  hitDamage: 20
 --- !u!136 &3469045813599494570
 CapsuleCollider:
   m_ObjectHideFlags: 0

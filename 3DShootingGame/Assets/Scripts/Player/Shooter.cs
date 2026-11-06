@@ -10,11 +10,11 @@ public class Shooter : MonoBehaviour
 {
     #region Config
 
-    [SerializeField] private GameObject havingWeapon; // 持っている武器
+    [SerializeField] protected GameObject havingWeapon; // 持っている武器
     #endregion
 
     #region State
-    private bool isShooting = false; // 発射フラグ
+    protected bool isShooting = false; // 発射フラグ
     #endregion
 
     // 発射フラグを取得します

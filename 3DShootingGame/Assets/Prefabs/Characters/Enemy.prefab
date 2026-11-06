@@ -1473,6 +1473,7 @@ GameObject:
   - component: {fileID: 7549674289510172710}
   - component: {fileID: 6562033086572560130}
   - component: {fileID: -320831968979635110}
+  - component: {fileID: 5659329516249492260}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1568,6 +1569,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   myHealth: 100
+--- !u!114 &5659329516249492260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001143135773689813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb71eaf9d5e3024ea7115cc52842d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shooter
+  havingWeapon: {fileID: 8361300873042068269}
 --- !u!1 &2313847112181551139
 GameObject:
   m_ObjectHideFlags: 0
@@ -4242,6 +4256,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6561e880d38c1db449a61fea6742297f, type: 3}
+--- !u!1 &8361300873042068269 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5308316322358639554, guid: 6561e880d38c1db449a61fea6742297f, type: 3}
+  m_PrefabInstance: {fileID: 4441573195745474799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8582267646224304989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5384605026239460274, guid: 6561e880d38c1db449a61fea6742297f, type: 3}

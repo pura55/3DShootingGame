@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour ,IMovable
     private Vector3 moveDirection = Vector3.zero; // 進行方向
     private Vector2 moveInput = Vector2.zero; // 入力する移動値
     private bool isRun = false; // 走知っているかどうかのフラグ
+    private float gravity = 10f;
     #endregion
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -83,7 +84,7 @@ public class PlayerMovement : MonoBehaviour ,IMovable
         Vector3 finalDirection = transform.TransformDirection(moveDirection.x, 0, moveDirection.z);
 
         // y軸は固定
-        finalDirection.y = moveDirection.y;
+        finalDirection.y -= gravity;
 
         characterController.Move(finalDirection * Time.deltaTime);
     }
